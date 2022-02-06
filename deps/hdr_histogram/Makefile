@@ -2,7 +2,7 @@ STD=
 WARN= -Wall
 OPT= -Os
 
-R_CFLAGS= $(STD) $(WARN) $(OPT) $(DEBUG) $(CFLAGS)
+R_CFLAGS= $(STD) $(WARN) $(OPT) $(DEBUG) $(CFLAGS) -pthread
 R_LDFLAGS= $(LDFLAGS)
 DEBUG= -g
 
