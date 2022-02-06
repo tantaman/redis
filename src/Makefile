@@ -112,6 +112,8 @@ endif
 endif
 endif
 
+MALLOC=libc
+
 # Override default settings if possible
 -include .make-settings
 

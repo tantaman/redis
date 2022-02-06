@@ -38,10 +38,6 @@
 #include <errno.h>
 #include <ctype.h>
 
-#if EMSCRIPTEN
- #include <emscripten.h>
-#endif
-
 #include "hiredis.h"
 #include "net.h"
 #include "sds.h"
