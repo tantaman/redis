@@ -118,7 +118,7 @@ MALLOC=libc
 -include .make-settings
 
 FINAL_CFLAGS=$(STD) $(WARN) $(OPT) $(DEBUG) $(CFLAGS) $(REDIS_CFLAGS) -pthread -ftls-model=local-exec
-FINAL_LDFLAGS=$(LDFLAGS) $(REDIS_LDFLAGS) $(DEBUG)
+FINAL_LDFLAGS=$(LDFLAGS) $(REDIS_LDFLAGS) $(DEBUG) -s PTHREAD_POOL_SIZE=2
 FINAL_LIBS=-lm
 DEBUG=-g -ggdb
 
