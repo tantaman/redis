@@ -2,6 +2,9 @@
 
 default: all
 
+CFLAGS=-pthread
+LDFLAGS=-pthread -s PTHREAD_POOL_SIZE=2
+
 .DEFAULT:
 	cd src && $(MAKE) $@
 
